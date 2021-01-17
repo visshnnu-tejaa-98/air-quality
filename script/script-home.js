@@ -6,7 +6,7 @@ search.addEventListener("click",function(e){
     data.innerHTML=""
     async function getData(){
         try{
-            let apiResponse = await fetch(`http://api.airvisual.com/v2/nearest_city?key=a4821488-0544-45c7-8e11-88512f603069`)
+            let apiResponse = await fetch(`https://api.airvisual.com/v2/nearest_city?key=a4821488-0544-45c7-8e11-88512f603069`)
             let apiData = await apiResponse.json()
             let date = apiData.data.current.pollution.ts
             console.log(date.split("T0"))         
